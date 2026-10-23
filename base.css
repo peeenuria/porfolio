@@ -171,3 +171,9 @@ header.nav{padding-top:10px!important;padding-bottom:10px!important}
 .f.row.galeria>img{flex:0 0 80%!important;width:80%!important;max-width:none!important;height:auto!important;scroll-snap-align:start;transition:transform .3s ease,box-shadow .3s ease}
 .galeria>img.foco{transform:translate(-3px,-3px)}
 }
+/* Botón Invertido: sombra separada por una franja del color del fondo */
+body{--fondo:#ffffff}
+.p-reclutador,[style*="background:#ffce1b"]{--fondo:#FFCE1B}
+header.nav,[style*="background:#ffffff"]{--fondo:#ffffff}
+a.btn[style*="background:#000000"]{box-shadow:3px 3px 0 var(--fondo),6px 6px 0 #000!important}
+a.btn[style*="background:#000000"]:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--fondo),8px 8px 0 #000!important}
