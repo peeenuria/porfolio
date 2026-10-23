@@ -113,3 +113,14 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 .pie-botones{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 @media (max-width:640px){.pie-botones{margin-top:16px}.pie-botones>a:last-child{order:-1}}
 .reparto{position:relative;align-self:stretch;width:100%}.reparto>img{display:block}@media (max-width:700px){.pill-reparto{transform:scale(.8);transform-origin:left top}}@media (max-width:480px){.pill-reparto{display:none!important}}
+/* Móvil: filas apiladas sin forzar altura y con separación */
+@media (max-width:640px){
+.row:not(.phones)>*{flex:0 0 auto!important}
+.row:not(.phones){row-gap:clamp(16px,4vw,24px)!important}
+.p-reclutador .card.row>div:last-child{border-left:0!important;border-top:2px solid #000;padding:14px 0 0 0!important;width:100%!important}
+.p-reclutador [style*="justify-content:space-between"]>p:last-child{text-align:right}
+}
+.btnrow:not([style*="row-gap"]){row-gap:12px}
+.btnrow:has(>.card){row-gap:16px}
+@media (max-width:640px){.btnrow:has(>.card){row-gap:20px!important}}
+@media (max-width:640px){.row:not(.phones)>img{flex:0 0 auto!important;width:100%!important;height:auto!important}}
