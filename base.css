@@ -91,3 +91,6 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 @media (prefers-reduced-motion:reduce){.stars span{transition:none}.critica:hover .stars span{transform:none}}
 footer.reveal{opacity:1!important;transform:none!important}
 @media (min-width:821px){.p-reclutador .lateral{border-right:0!important}.p-reclutador .lateral+*{border-left:3px solid #000}}
+.critica{transition:transform .25s ease;position:relative}
+@media (hover:hover){.critica:hover{transform:scale(1.2);z-index:2}}
+@media (prefers-reduced-motion:reduce){.critica{transition:none}}

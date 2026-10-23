@@ -91,6 +91,9 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 @media (prefers-reduced-motion:reduce){.stars span{transition:none}.critica:hover .stars span{transform:none}}
 footer.reveal{opacity:1!important;transform:none!important}
 @media (min-width:821px){.p-reclutador .lateral{border-right:0!important}.p-reclutador .lateral+*{border-left:3px solid #000}}
+.critica{transition:transform .25s ease;position:relative}
+@media (hover:hover){.critica:hover{transform:scale(1.2);z-index:2}}
+@media (prefers-reduced-motion:reduce){.critica{transition:none}}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
