@@ -146,6 +146,13 @@ footer.sec>p:last-child{text-align:right}
 .critica.activa{transform:scale(1.05);z-index:2}
 .critica.activa .stars span{color:#FFCE1B;transform:scale(1.15)}
 }
+@media (max-width:640px){
+#casos .row>.card,.p-reclutador .card.row,#sobre-mi .row>.card{transition:transform .3s ease,box-shadow .3s ease}
+#casos .row>.card.foco,.p-reclutador .card.row.foco,#sobre-mi .row>.card.foco{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #000!important}
+#extras .row>a .img{transition:transform .3s ease,box-shadow .3s ease}
+#extras .row>a.foco .img{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #000}
+#extras .row,#sobre-mi .row{padding-top:4px!important;padding-left:4px!important;margin-left:-4px}
+}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
