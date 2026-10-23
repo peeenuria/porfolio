@@ -27,3 +27,20 @@ document.documentElement.classList.add('js');
   function ajustar(){var v=V;document.querySelectorAll('.pista').forEach(function(p){var d=p.scrollWidth/2; if(d>0) p.style.animationDuration=(d/v).toFixed(2)+'s';});}
   ajustar(); window.addEventListener('resize',ajustar); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
 })();
+/* Móvil: la tarjeta en foco se levanta como en el hover de escritorio */
+(function(){
+  if(!window.matchMedia('(hover: none)').matches) return;
+  var vert=[].slice.call(document.querySelectorAll('#casos .row>.card, .p-reclutador .card.row'));
+  var pend=false;
+  function v(){pend=false; var c=innerHeight/2,best=null,bd=1e9;
+    vert.forEach(function(k){var r=k.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; var d=Math.abs((r.top+r.bottom)/2-c); if(d<bd){bd=d;best=k;}});
+    vert.forEach(function(k){k.classList.toggle('foco',k===best&&bd<innerHeight*0.4)});}
+  if(vert.length){window.addEventListener('scroll',function(){if(!pend){pend=true;requestAnimationFrame(v)}},{passive:true}); v();}
+  [].forEach.call(document.querySelectorAll('#extras .row, #sobre-mi .row'),function(row){
+    var items=[].slice.call(row.children), pp=false;
+    function h(){pp=false; var L=row.getBoundingClientRect().left,best=null,bd=1e9;
+      items.forEach(function(k){var d=Math.abs(k.getBoundingClientRect().left-L); if(d<bd){bd=d;best=k;}});
+      items.forEach(function(k){k.classList.toggle('foco',k===best)});}
+    row.addEventListener('scroll',function(){if(!pp){pp=true;requestAnimationFrame(h)}},{passive:true}); h();
+  });
+})();

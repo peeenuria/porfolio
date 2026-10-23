@@ -146,3 +146,10 @@ footer.sec>p:last-child{text-align:right}
 .critica.activa{transform:scale(1.05);z-index:2}
 .critica.activa .stars span{color:#FFCE1B;transform:scale(1.15)}
 }
+@media (max-width:640px){
+#casos .row>.card,.p-reclutador .card.row,#sobre-mi .row>.card{transition:transform .3s ease,box-shadow .3s ease}
+#casos .row>.card.foco,.p-reclutador .card.row.foco,#sobre-mi .row>.card.foco{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #000!important}
+#extras .row>a .img{transition:transform .3s ease,box-shadow .3s ease}
+#extras .row>a.foco .img{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #000}
+#extras .row,#sobre-mi .row{padding-top:4px!important;padding-left:4px!important;margin-left:-4px}
+}
