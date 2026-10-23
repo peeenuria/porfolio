@@ -92,5 +92,5 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 footer.reveal{opacity:1!important;transform:none!important}
 @media (min-width:821px){.p-reclutador .lateral{border-right:0!important}.p-reclutador .lateral+*{border-left:3px solid #000}}
 .critica{transition:transform .25s ease;position:relative}
-@media (hover:hover){.critica:hover{transform:scale(1.2);z-index:2}}
+@media (hover:hover){*:has(>.critica:hover)>.critica{transform:scale(.95)}*:has(>.critica:hover)>.critica:hover{transform:scale(1.05);z-index:2}}
 @media (prefers-reduced-motion:reduce){.critica{transition:none}}
