@@ -13,9 +13,13 @@ document.documentElement.classList.add('js');
     p.innerHTML=Array(6).join('<span aria-hidden="true">★</span>');
     p.parentElement.classList.add('critica');
   });
-  if(!window.matchMedia('(hover: none)').matches||!('IntersectionObserver' in window)) return;
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('vista',e.isIntersecting)})},{threshold:0.7});
-  ps.forEach(function(p){io.observe(p.parentElement)});
+  if(!window.matchMedia('(hover: none)').matches) return;
+  /* En móvil: la tarjeta más cercana al centro de la pantalla crece y pinta sus estrellas */
+  var cards=ps.map(function(p){return p.parentElement}), pend=false;
+  function marcar(){pend=false; var c=innerHeight/2, best=null, bd=1e9;
+    cards.forEach(function(k){var r=k.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; var d=Math.abs((r.top+r.bottom)/2-c); if(d<bd){bd=d;best=k;}});
+    cards.forEach(function(k){k.classList.toggle('activa',k===best && bd<innerHeight*0.35)});}
+  window.addEventListener('scroll',function(){if(!pend){pend=true;requestAnimationFrame(marcar)}},{passive:true}); marcar();
 })();
 /* Cinta: misma velocidad en cualquier pantalla (~121 px/s, como el prototipo) */
 (function(){

@@ -137,3 +137,12 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 #sobre-mi .row>.card{flex-basis:86%!important;width:86%!important}
 #sobre-mi .card [style*="border-radius:999px"] p{white-space:nowrap}
 }
+.daruma-l1{display:block}
+@media (max-width:640px){
+.daruma-l1{display:inline}
+.daruma-preg{display:block;margin-top:12px;font-weight:600}
+footer.sec>p:last-child{text-align:right}
+.critica{transition:transform .3s ease}
+.critica.activa{transform:scale(1.05);z-index:2}
+.critica.activa .stars span{color:#FFCE1B;transform:scale(1.15)}
+}
