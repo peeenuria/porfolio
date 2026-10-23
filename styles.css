@@ -110,6 +110,8 @@ body:not(.p-reclutador) .sec:not(.cuerpo){padding-left:max(clamp(16px,4.44vw,64p
 .p-reclutador header.sec,.p-reclutador footer.sec{padding-left:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important;padding-right:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important}
 
 @media (min-width:641px) and (max-width:999px){.ficha{flex-wrap:wrap!important;row-gap:20px!important}.ficha>*{flex:1 1 calc(50% - 32px)!important}}
+.pie-botones{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+@media (max-width:640px){.pie-botones{margin-top:16px}.pie-botones>a:last-child{order:-1}}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
