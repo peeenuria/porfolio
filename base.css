@@ -105,3 +105,6 @@ img[src*="manos-"]{border:3px solid #000;border-radius:8px;box-sizing:border-box
 @media (min-width:641px){.ficha{justify-content:space-between!important;column-gap:32px!important;flex-wrap:nowrap!important}.ficha>*{flex:0 1 auto!important;min-width:0;max-width:36%}}
 @media (max-width:640px){.ficha{row-gap:20px!important}}
 @media (min-width:641px){.ficha>*:not(:first-child):not(:last-child){flex-shrink:0!important}.ficha>*:not(:first-child):not(:last-child) *{white-space:nowrap}.ficha>*:first-child{flex-shrink:1!important}}
+/* Contenedor centrado: en pantallas anchas el contenido no pasa de 1312px (el ancho útil del diseño a 1440) */
+body:not(.p-reclutador) .sec:not(.cuerpo){padding-left:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important;padding-right:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important}
+.p-reclutador header.sec,.p-reclutador footer.sec{padding-left:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important;padding-right:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important}

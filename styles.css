@@ -105,6 +105,9 @@ img[src*="manos-"]{border:3px solid #000;border-radius:8px;box-sizing:border-box
 @media (min-width:641px){.ficha{justify-content:space-between!important;column-gap:32px!important;flex-wrap:nowrap!important}.ficha>*{flex:0 1 auto!important;min-width:0;max-width:36%}}
 @media (max-width:640px){.ficha{row-gap:20px!important}}
 @media (min-width:641px){.ficha>*:not(:first-child):not(:last-child){flex-shrink:0!important}.ficha>*:not(:first-child):not(:last-child) *{white-space:nowrap}.ficha>*:first-child{flex-shrink:1!important}}
+/* Contenedor centrado: en pantallas anchas el contenido no pasa de 1312px (el ancho útil del diseño a 1440) */
+body:not(.p-reclutador) .sec:not(.cuerpo){padding-left:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important;padding-right:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important}
+.p-reclutador header.sec,.p-reclutador footer.sec{padding-left:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important;padding-right:max(clamp(16px,4.44vw,64px),calc((100% - 1312px)/2))!important}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
