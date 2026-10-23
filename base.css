@@ -23,8 +23,8 @@ a.card:hover,a .card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #
 .navlink:hover::after{right:0}
 a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .cinta{height:49px}
-.pista{animation:cinta 25s linear infinite;will-change:transform}
-@keyframes cinta{to{transform:translateX(-50%)}}
+.pista{animation:cinta 25s linear infinite;backface-visibility:hidden}
+@keyframes cinta{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.pista{animation:none}.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}

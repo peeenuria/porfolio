@@ -17,3 +17,9 @@ document.documentElement.classList.add('js');
   var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('vista',e.isIntersecting)})},{threshold:0.7});
   ps.forEach(function(p){io.observe(p.parentElement)});
 })();
+/* Cinta: misma velocidad en cualquier pantalla (~121 px/s, como el prototipo) */
+(function(){
+  var V=121;
+  function ajustar(){var v=window.innerWidth<=640?V*1.6:V;document.querySelectorAll('.pista').forEach(function(p){var d=p.scrollWidth/2; if(d>0) p.style.animationDuration=(d/v).toFixed(2)+'s';});}
+  ajustar(); window.addEventListener('resize',ajustar); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ajustar);
+})();
