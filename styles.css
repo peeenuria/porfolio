@@ -125,6 +125,14 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 @media (max-width:640px){.btnrow:has(>.card){row-gap:20px!important}}
 @media (max-width:640px){.row:not(.phones)>img{flex:0 0 auto!important;width:100%!important;height:auto!important}}
 .pista{width:max-content!important;max-width:none!important;flex-wrap:nowrap!important}
+/* Cajas de icono: siempre cuadradas */
+.fh[style*="width:72px"][style*="height:72px"]{height:72px!important;flex-shrink:0}
+/* Navaja suiza: carrusel en móvil */
+@media (max-width:640px){
+#sobre-mi .row{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px!important;margin-right:-16px;padding:0 16px 14px 0;scrollbar-width:none;align-items:stretch!important}
+#sobre-mi .row::-webkit-scrollbar{display:none}
+#sobre-mi .row>.card{flex:0 0 80%!important;width:80%!important;scroll-snap-align:start}
+}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
