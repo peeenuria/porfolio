@@ -70,6 +70,9 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 [style*="auto-fill"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 @media (max-width:900px){header.nav .navlink{display:none!important}}
+.card.fh{height:auto!important}
+.row>.card{align-self:stretch!important}
+.card>.btn:last-child{margin-top:auto}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
