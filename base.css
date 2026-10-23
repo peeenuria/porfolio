@@ -112,3 +112,4 @@ body:not(.p-reclutador) .sec:not(.cuerpo){padding-left:max(clamp(16px,4.44vw,64p
 @media (min-width:641px) and (max-width:999px){.ficha{flex-wrap:wrap!important;row-gap:20px!important}.ficha>*{flex:1 1 calc(50% - 32px)!important}}
 .pie-botones{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 @media (max-width:640px){.pie-botones{margin-top:16px}.pie-botones>a:last-child{order:-1}}
+.reparto{position:relative;align-self:stretch;width:100%}.reparto>img{display:block}@media (max-width:700px){.pill-reparto{transform:scale(.8);transform-origin:left top}}@media (max-width:480px){.pill-reparto{display:none!important}}
