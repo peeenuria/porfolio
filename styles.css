@@ -183,6 +183,7 @@ a.btn[style*="background:#000000"]:hover{transform:translate(-2px,-2px);box-shad
 .resumen ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-family:'Figtree',sans-serif;font-size:var(--fs-body-l,20px);line-height:1.45}
 .resumen b{font-weight:700}
 @media (max-width:640px){.resumen ul{font-size:17px}}
+.nota-dato{display:block;margin-top:10px;font-size:.85em;font-style:italic;opacity:.75}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
