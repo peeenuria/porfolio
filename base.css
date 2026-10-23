@@ -89,3 +89,5 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 .critica:hover .stars span,.critica.vista .stars span{color:#FFCE1B;transform:scale(1.15)}
 .critica .stars span:nth-child(2){transition-delay:.04s}.critica .stars span:nth-child(3){transition-delay:.08s}.critica .stars span:nth-child(4){transition-delay:.12s}.critica .stars span:nth-child(5){transition-delay:.16s}
 @media (prefers-reduced-motion:reduce){.stars span{transition:none}.critica:hover .stars span{transform:none}}
+footer.reveal{opacity:1!important;transform:none!important}
+@media (min-width:821px){.p-reclutador .lateral{border-right:0!important}.p-reclutador .lateral+*{border-left:3px solid #000}}
