@@ -11,7 +11,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:'Figtree',sys
 h1,h2,h3,h4,p{margin:0;overflow-wrap:break-word;white-space:pre-line}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.img{background:#f1f1f1;object-fit:cover}
+.img{object-fit:cover}.img.photo{background:#f1f1f1}
 .sec{width:100%}
 header.nav{position:sticky;top:0;z-index:20}
 .btn,.card{transition:transform .18s ease,box-shadow .18s ease}
