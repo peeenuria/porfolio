@@ -36,7 +36,7 @@ document.documentElement.classList.add('js');
     vert.forEach(function(k){var r=k.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; var d=Math.abs((r.top+r.bottom)/2-c); if(d<bd){bd=d;best=k;}});
     vert.forEach(function(k){k.classList.toggle('foco',k===best&&bd<innerHeight*0.4)});}
   if(vert.length){window.addEventListener('scroll',function(){if(!pend){pend=true;requestAnimationFrame(v)}},{passive:true}); v();}
-  [].forEach.call(document.querySelectorAll('#extras .row, #sobre-mi .row'),function(row){
+  [].forEach.call(document.querySelectorAll('#extras .row, #sobre-mi .row, .galeria'),function(row){
     var items=[].slice.call(row.children), pp=false;
     function h(){pp=false; var L=row.getBoundingClientRect().left,best=null,bd=1e9;
       items.forEach(function(k){var d=Math.abs(k.getBoundingClientRect().left-L); if(d<bd){bd=d;best=k;}});

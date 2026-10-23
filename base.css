@@ -112,7 +112,7 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 @media (min-width:641px) and (max-width:999px){.ficha{flex-wrap:wrap!important;row-gap:20px!important}.ficha>*{flex:1 1 calc(50% - 32px)!important}}
 .pie-botones{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 @media (max-width:640px){.pie-botones{margin-top:16px}.pie-botones>a:last-child{order:-1}}
-.reparto{position:relative;align-self:stretch;width:100%}.reparto>img{display:block}@media (max-width:700px){.pill-reparto{transform:scale(.8);transform-origin:left top}}@media (max-width:480px){.pill-reparto{display:none!important}}
+.reparto{position:relative;align-self:stretch;width:100%}.reparto>img{display:block}
 /* Móvil: filas apiladas sin forzar altura y con separación */
 @media (max-width:640px){
 .row:not(.phones)>*{flex:0 0 auto!important}
@@ -152,4 +152,22 @@ footer.sec>p:last-child{text-align:right}
 #extras .row>a .img{transition:transform .3s ease,box-shadow .3s ease}
 #extras .row>a.foco .img{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #000}
 #extras .row,#sobre-mi .row{padding-top:4px!important;padding-left:4px!important;margin-left:-4px}
+}
+
+/* ===== Ajustes móvil (revisión casos y extras) ===== */
+.desliza{width:100%;align-self:stretch}
+.desliza-hint{display:none}
+@media (max-width:640px){
+header.nav>a>p{display:none}
+header.nav a.btn p{white-space:nowrap}
+header.nav{padding-top:10px!important;padding-bottom:10px!important}
+.desliza{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:6px}
+.desliza>img{width:820px!important;max-width:none!important;height:auto!important}
+.desliza-reparto>.reparto{width:820px!important}
+.desliza-hint{display:block;margin-top:-4px;opacity:.7}
+.hero-extra{aspect-ratio:4/3!important;object-fit:cover!important;height:auto!important}
+.f.row.galeria{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px!important;margin-right:-16px;padding:4px 16px 14px 4px;margin-left:-4px;scrollbar-width:none;align-items:center!important}
+.f.row.galeria::-webkit-scrollbar{display:none}
+.f.row.galeria>img{flex:0 0 80%!important;width:80%!important;max-width:none!important;height:auto!important;scroll-snap-align:start;transition:transform .3s ease,box-shadow .3s ease}
+.galeria>img.foco{transform:translate(-3px,-3px)}
 }
