@@ -73,3 +73,14 @@ h1,h2,h3,h4{font-optical-sizing:auto}
 .card.fh{height:auto!important}
 .row>.card{align-self:stretch!important}
 .card>.btn:last-child{margin-top:auto}
+/* Extras: rejilla adaptable 3 → 2 → carrusel */
+#extras .row{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,32px)!important;width:100%}
+#extras .row>a{width:auto!important;max-width:none!important;flex:none!important}
+#extras .row>a .img{aspect-ratio:4/3!important;width:100%!important;object-fit:cover;transition:transform .3s}
+#extras .row>a:hover .img{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #000}
+@media (max-width:1000px){#extras .row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){
+#extras .row{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px!important;margin-right:-16px;padding-right:16px;padding-bottom:8px;scrollbar-width:none}
+#extras .row::-webkit-scrollbar{display:none}
+#extras .row>a{flex:0 0 78%!important;width:78%!important;scroll-snap-align:start}
+}
