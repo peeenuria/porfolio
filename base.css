@@ -124,3 +124,4 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 .btnrow:has(>.card){row-gap:16px}
 @media (max-width:640px){.btnrow:has(>.card){row-gap:20px!important}}
 @media (max-width:640px){.row:not(.phones)>img{flex:0 0 auto!important;width:100%!important;height:auto!important}}
+.pista{width:max-content!important;max-width:none!important;flex-wrap:nowrap!important}
