@@ -133,3 +133,7 @@ body:not(.p-reclutador) .sec:not(.cuerpo):not(header):not(footer){padding-left:m
 #sobre-mi .row::-webkit-scrollbar{display:none}
 #sobre-mi .row>.card{flex:0 0 80%!important;width:80%!important;scroll-snap-align:start}
 }
+@media (max-width:640px){
+#sobre-mi .row>.card{flex-basis:86%!important;width:86%!important}
+#sobre-mi .card [style*="border-radius:999px"] p{white-space:nowrap}
+}
