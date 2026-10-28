@@ -195,6 +195,11 @@ a.btn[style*="background:#000000"]:hover{transform:translate(-2px,-2px);box-shad
 .p-rayofhope .row:has(>img[src*="rayofhope-005"])>img,.p-rayofhope .row:has(>img[src*="rayofhope-009"])>img{width:100%!important;max-width:none!important;height:auto!important}
 }
 #contacto .row{row-gap:clamp(24px,4vw,40px)!important}
+@media (max-width:640px){.p-inicio>section:first-of-type .btnrow>a:last-child{display:none!important}}
+/* Selector de idioma */
+.lang-switch{font-family:'Figtree',sans-serif;font-weight:700;font-size:14px;letter-spacing:.1em;padding:8px 10px;border:2px solid #000;border-radius:6px;color:#000;text-decoration:none;background:#fff;line-height:1}
+.lang-switch:hover{background:#FFCE1B}
+header.nav .btnrow{align-items:center}
 .s-display-xl{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(44px, 8.89vw, 128px);line-height:0.92;letter-spacing:-0.02em}
 .s-display-l{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:800;font-size:clamp(36px, 5.56vw, 80px);line-height:0.95;letter-spacing:-0.02em}
 .s-heading-h1{font-family:'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;font-weight:700;font-size:clamp(28px, 3.33vw, 48px);line-height:1.05;letter-spacing:-0.01em}
